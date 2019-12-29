@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,135 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoodFeelingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIe-Wv-XWo">
+                                <rect key="frame" x="27" y="487" width="321" height="154"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UIe-Wv-XWo" secondAttribute="height" multiplier="321:154" id="m3n-l9-gG7"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMS-hj-xwD" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="27" y="403" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AMS-hj-xwD" secondAttribute="height" multiplier="1:1" id="Plj-yt-Y0I"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="5eq-o7-C6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-4i-beJ" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="111" y="403" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kHj-4i-beJ" secondAttribute="height" multiplier="1:1" id="JeL-MD-tVB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="65V-72-sug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PT-gU-5VZ" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="195" y="403" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3PT-gU-5VZ" secondAttribute="height" multiplier="1:1" id="aud-zy-fnW"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="jeP-T6-bFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxS-7C-B3i" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="279" y="403" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZxS-7C-B3i" secondAttribute="height" multiplier="1:1" id="w1s-fQ-igC"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="zaj-WM-ILU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-XO-1rP" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="27" y="319" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EtP-XO-1rP" secondAttribute="height" multiplier="1:1" id="SCg-XX-iJf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="i8g-9Q-L6w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mk-YX-cPq" customClass="BackgroundHighlightedButton" customModule="GoodFeelingApp" customModuleProvider="target">
+                                <rect key="frame" x="111" y="319" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Mk-YX-cPq" secondAttribute="height" multiplier="1:1" id="05D-64-fif"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchDown" id="cTT-CR-2Br"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZV-gh-ZdY">
+                                <rect key="frame" x="195" y="319" width="69" height="69"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AZV-gh-ZdY" secondAttribute="height" multiplier="1:1" id="DPx-wp-x7N"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ou-U2-Olx">
+                                <rect key="frame" x="205" y="338" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3PT-gU-5VZ" firstAttribute="width" secondItem="AMS-hj-xwD" secondAttribute="width" id="39O-Im-B9c"/>
+                            <constraint firstItem="AMS-hj-xwD" firstAttribute="width" secondItem="EtP-XO-1rP" secondAttribute="width" id="4Sc-bo-vyA"/>
+                            <constraint firstItem="AZV-gh-ZdY" firstAttribute="width" secondItem="0Mk-YX-cPq" secondAttribute="width" id="5NS-Pa-OqS"/>
+                            <constraint firstItem="3PT-gU-5VZ" firstAttribute="centerY" secondItem="AMS-hj-xwD" secondAttribute="centerY" id="9YD-8o-u1K"/>
+                            <constraint firstItem="kHj-4i-beJ" firstAttribute="width" secondItem="AMS-hj-xwD" secondAttribute="width" id="CaC-VN-f5L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UIe-Wv-XWo" secondAttribute="bottom" constant="26" id="Eqc-f7-eVR"/>
+                            <constraint firstItem="UIe-Wv-XWo" firstAttribute="top" secondItem="AMS-hj-xwD" secondAttribute="bottom" constant="15" id="EyP-xa-dly"/>
+                            <constraint firstItem="kHj-4i-beJ" firstAttribute="leading" secondItem="AMS-hj-xwD" secondAttribute="trailing" constant="15" id="GGf-4d-y1g"/>
+                            <constraint firstItem="UIe-Wv-XWo" firstAttribute="top" secondItem="ZxS-7C-B3i" secondAttribute="bottom" constant="15" id="H5d-F2-TYa"/>
+                            <constraint firstItem="ZxS-7C-B3i" firstAttribute="centerY" secondItem="AMS-hj-xwD" secondAttribute="centerY" id="It2-dq-nHf"/>
+                            <constraint firstItem="EtP-XO-1rP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="Jqs-oc-6YD"/>
+                            <constraint firstItem="2ou-U2-Olx" firstAttribute="centerY" secondItem="AZV-gh-ZdY" secondAttribute="centerY" id="N9e-Np-8rS"/>
+                            <constraint firstItem="EtP-XO-1rP" firstAttribute="width" secondItem="0Mk-YX-cPq" secondAttribute="width" id="ORk-F7-yrq"/>
+                            <constraint firstItem="ZxS-7C-B3i" firstAttribute="leading" secondItem="3PT-gU-5VZ" secondAttribute="trailing" constant="15" id="RyZ-Rh-Phk"/>
+                            <constraint firstItem="AZV-gh-ZdY" firstAttribute="leading" secondItem="0Mk-YX-cPq" secondAttribute="trailing" constant="15" id="T21-fO-Grm"/>
+                            <constraint firstItem="AMS-hj-xwD" firstAttribute="top" secondItem="EtP-XO-1rP" secondAttribute="bottom" constant="15" id="T3S-Sr-bDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZxS-7C-B3i" secondAttribute="trailing" constant="27" id="UJG-Pb-ZsH"/>
+                            <constraint firstItem="2ou-U2-Olx" firstAttribute="centerX" secondItem="AZV-gh-ZdY" secondAttribute="centerX" id="UTw-hj-u5C"/>
+                            <constraint firstItem="ZxS-7C-B3i" firstAttribute="width" secondItem="AMS-hj-xwD" secondAttribute="width" id="Zre-MW-zp0"/>
+                            <constraint firstItem="0Mk-YX-cPq" firstAttribute="leading" secondItem="EtP-XO-1rP" secondAttribute="trailing" constant="15" id="cK6-Zk-90Y"/>
+                            <constraint firstItem="kHj-4i-beJ" firstAttribute="centerY" secondItem="AMS-hj-xwD" secondAttribute="centerY" id="enK-xI-Wz4"/>
+                            <constraint firstItem="0Mk-YX-cPq" firstAttribute="centerY" secondItem="EtP-XO-1rP" secondAttribute="centerY" id="lx1-ug-LHs"/>
+                            <constraint firstItem="UIe-Wv-XWo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="ts9-aH-6pc"/>
+                            <constraint firstItem="3PT-gU-5VZ" firstAttribute="leading" secondItem="kHj-4i-beJ" secondAttribute="trailing" constant="15" id="uYy-sa-vgW"/>
+                            <constraint firstItem="AZV-gh-ZdY" firstAttribute="centerY" secondItem="0Mk-YX-cPq" secondAttribute="centerY" id="uc2-Pt-eOO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UIe-Wv-XWo" secondAttribute="trailing" constant="27" id="vDj-wh-wTk"/>
+                            <constraint firstItem="AMS-hj-xwD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="vIO-bC-cIR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="UIe-Wv-XWo" id="KGv-bj-uP8"/>
+                        <outletCollection property="buttonArray" destination="EtP-XO-1rP" collectionClass="NSMutableArray" id="W6f-VR-lzU"/>
+                        <outletCollection property="buttonArray" destination="0Mk-YX-cPq" collectionClass="NSMutableArray" id="2PC-D7-tp0"/>
+                        <outletCollection property="buttonArray" destination="ZxS-7C-B3i" collectionClass="NSMutableArray" id="B4m-Ca-v0O"/>
+                        <outletCollection property="buttonArray" destination="3PT-gU-5VZ" collectionClass="NSMutableArray" id="ovJ-df-epw"/>
+                        <outletCollection property="buttonArray" destination="kHj-4i-beJ" collectionClass="NSMutableArray" id="hC8-yv-OuY"/>
+                        <outletCollection property="buttonArray" destination="AMS-hj-xwD" collectionClass="NSMutableArray" id="HEn-bE-M2F"/>
+                        <outletCollection property="miniViewArray" destination="AZV-gh-ZdY" collectionClass="NSMutableArray" id="51M-9H-JEO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
