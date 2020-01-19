@@ -1,0 +1,6 @@
+framework module Pods_GoodFeelingApp_GoodFeelingAppUITests {
+  umbrella header "Pods-GoodFeelingApp-GoodFeelingAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
